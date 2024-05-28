@@ -121,7 +121,7 @@ def run_neat(config):
     ppl.add_reporter(stats)
     ppl.add_reporter(neat.Checkpointer(1)) # save checkpoint after n generation
 
-    best = ppl.run(evaluate_genome_fitness, 1) # run for 50 generations
+    best = ppl.run(evaluate_genome_fitness, 50) # run for 50 generations
 
     with open("best.pickle", "wb") as f:
         pickle.dump(best, f)
