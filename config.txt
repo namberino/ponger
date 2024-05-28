@@ -1,3 +1,4 @@
+# https://neat-python.readthedocs.io/en/latest/config_file.html
 [NEAT]
 fitness_criterion     = max
 fitness_threshold     = 400
